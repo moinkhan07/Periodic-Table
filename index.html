@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+      }
+      #container {
+        margin: 30px auto auto auto;
+        
+      }
+      #container > div {
+        margin-left: 60px;
+        width: 15%;
+        height: 450px;
+        display: flex;
+      }
+      .first{
+        width:28%;
+        height: 450px;
+        margin: 0px 13px 0px 3px;
+      }
+      .first>div{
+        width: 100%;
+        height: 45px;
+        
+        margin-top: 16px;
+      }
+      .second{
+        margin-right: 13px;
+        padding-top: 66px;
+        width:26%;
+        height: 400px;
+      }
+      .second>div{
+        width: 100%;
+        height: 34.5px;
+        border: 1px solid black;
+        background-color: rgb(251, 113, 97);
+        margin-top: 17px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .third{
+        padding-top: 320px;
+        width:28%;
+        height: 400px;
+      }
+      .third>div{
+        width: 80%;
+        height: 39px;
+        border: 4px solid black;
+        margin-top: 17px;
+        background-color: rgb(255, 195, 189);
+      }
+      .H{
+        text-align: center;
+        font-size: 28px;
+        padding-top: 4px;
+        background-color: maroon;
+        border: 1px solid black;
+        color: white;
+      }
+      .green{
+        background-color: #689f38;
+        border: 1px solid black;
+      }
+      .big{
+        margin: -400px 0px 0px 262px;
+        width: 140px;
+        height: 140px;
+        border: 1px solid black;
+        background-color: #689f38;
+      }
+      #silinum{
+        text-align: right;
+        padding: 6px 6px 0px 0px;
+        font-weight: bold;
+      }
+      #SI{
+        padding: 10px 0px 5px 5px;
+        font-size:60px;
+      }
+      #sili{
+        font-size: 20px;
+        padding-left: 7px;
+      }
+      .main{
+
+        width: 600px;
+        height: 235px;
+        margin: 30px 0px 0px 265px;
+      }
+      .small{
+        display: inline-block;
+        width: 22px;
+        height: 43px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: blue;
+      }
+      #main2{
+        width: 330px;
+        height: 360px;
+        margin:-365px 10px 0px 588px;
+      }
+      .last{
+        display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+      }
+     .grey{
+      display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: gray;
+     }
+     .orange{
+      display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: rgb(249, 108, 21);
+     }
+     .pink{
+      display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: rgb(251, 70, 100);
+     }
+     .violet{
+      display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: rgb(143, 19, 143);
+     }
+     .green2{
+      display: inline-block;
+        width: 22px;
+        height: 44px;
+        border: 1px solid black;
+        margin: 0px 0px 10px 7px;
+        padding-left: 30px;
+        background-color: green;
+     }
+     .finalLine{
+       width: 52px;
+       height: 410px;
+       margin-left: 912px;
+       margin-top: -422px;
+     }
+     .fL{
+       width: 100%;
+       height: 44px;
+       margin-bottom: 15px;
+     }
+     .yellow{
+      width: 100%;
+       height: 44px;
+       border: 1px solid black;
+       background-color: yellow;
+       margin: 0px 0px 15.2px 7px;
+     }
+     #lastBox{
+       width: 500px;
+       height: 80px;
+       border: 1px solid black;
+       margin: 60px auto auto auto;
+     }
+     .darkGreen{
+       display: flex;
+       width: 100%;
+       height: 40px;
+       background-color: #373c04;
+     }
+     .lightGreen{
+       display: flex;
+      width: 100%;
+       height: 40px;
+       background-color: #7cb342;
+     }
+     .dg{
+       width: 6.75%;
+       height: 200%;
+       border: 1px solid rgb(83, 0, 0);
+     }
+     .lg{
+       width: 9%;
+     }
+     .darkGreen>div:first-child{
+       text-align: center;
+       color: white;
+       padding-top: 10px;
+       height: 70px;
+     }
+     .lightGreen>div:nth-child(7){
+      text-align: center;
+       padding-top: 10px;
+       height: 70px;
+     }
+     .lightGreen>div:nth-child(14){
+      text-align: center;
+       padding-top: 10px;
+       height: 70px;
+     }
+    </style>
+  </head>
+  <body>
+    <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+    <div id="container">
+      <div>
+        <div class="first">
+            <div class="H" >H</div>
+            <div class="green" ></div>
+            <div class="green" ></div>
+            <div class="green" ></div>
+            <div class="green" ></div>
+            <div class="green" ></div>
+            <div class="green" ></div>
+        </div>
+        <div class="second">
+            <div>4</div>
+            <div>12</div>
+            <div>20</div>
+            <div>38</div>
+            <div>56</div>
+            <div>88</div>
+        </div>
+        <div class="third">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="big" >  
+        <div id="silinum" >14</div>
+        <div id="SI">Si</div>
+        <div id="sili" >silicon</div>
+      </div>
+
+      <div class="main" >
+        <div  class="bound">
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div> 
+        </div>
+        <div  class="bound">
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div> 
+        </div>
+        <div  class="bound">
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div> 
+        </div>
+        <div  class="bound">
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div>
+          <div class="small" ></div> 
+        </div>
+        <div id="main2" >
+          <div>
+              <div class="violet"></div>
+              <div class="green2"></div>
+              <div class="green2"></div>
+              <div class="green2"></div>
+              <div class="pink"></div>
+          </div>
+          <div>
+            <div class="orange"></div>
+          <div class="violet"></div>
+          <div class="green2"></div>
+          <div class="green2"></div>
+          <div class="pink"></div>
+          </div>
+          <div>
+            <div class="orange"></div>
+          <div class="violet"></div>
+          <div class="violet"></div>
+          <div class="green2"></div>
+          <div class="pink"></div>
+          </div>
+          <div>
+            <div class="orange"></div>
+          <div class="orange"></div>
+          <div class="violet"></div>
+          <div class="violet"></div>
+          <div class="pink"></div>
+          </div>
+          <div>
+            <div class="orange"></div>
+          <div class="orange"></div>
+          <div class="orange"></div>
+          <div class="violet"></div>
+          <div class="pink"></div>
+          </div>
+          <div>
+            <div class="grey"></div>
+          <div class="grey"></div>
+          <div class="grey"></div>
+          <div class="grey"></div>
+          <div class="grey"></div>
+          </div>
+        </div>
+        <div class="finalLine">
+          <div class="yellow" ></div>
+          <div class="yellow" ></div>
+          <div class="yellow" ></div>
+          <div class="yellow" ></div>
+          <div class="yellow" ></div>
+          <div class="yellow" ></div>
+          <div class="grey" ></div>
+        </div>
+      </div>
+      
+      <div id="lastBox" >
+        <div class="darkGreen"> 
+          <div class="dg" >La</div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+          <div class="dg" ></div>
+        </div>
+
+        <div class="lightGreen">
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" >Am</div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" ></div>
+          <div class="lg" >No</div>
+      </div>
+  </body>
+</html>
